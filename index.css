@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    color: #05cbe9;
+}
+
+.card-title,
+.card-btn,
+.card-read-time {
+    font-family: 'Blinker', sans-serif;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+}
