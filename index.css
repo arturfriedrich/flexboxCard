@@ -2,18 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 body {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin: 0;
 }
 
 .card {
     width: 90%;
-    margin: 0 auto;
     max-width: 750px;
+    background-color: #111d4a;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    object-fit: cover;
+    flex-basis: 200px;
+    min-height: 0;
+}
+
+.card-content {
+    padding: 1em;
 }
 
 .card-title {
     font-size: 1.75rem;
     color: #05cbe9;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .card-title,
@@ -25,8 +45,70 @@ body {
 .card-body {
     font-size: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.card-read-time {
+    margin: 0;
+    opacity: .7;
+    line-height: 1;
+}
+
+.card-read-time span {
+    font-weight: 700;
+    display: block;
+    font-size: 1.25em;
 }
 
 .card-btn {
     font-size: 1.25rem;
+    background-color: #05cbe9;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    padding: .35em 1em;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.card-btn:hover {
+    background-color: #2d3c74;
+    box-shadow: 4px 4px #99bdff;
+    transition: .3s;
+  }
+  
+
+@media (min-width:600px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .card-image {
+        max-width: 200px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title {
+        font-size: 2.25rem
+    }
+    
+    .card-body {
+        font-size: 1.125rem;
+        max-width: 500px;
+    }
+
+    .card-footer {
+        align-items: flex-end;
+    }
 }
